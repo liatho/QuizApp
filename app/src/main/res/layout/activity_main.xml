@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quizapp.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/vermeer_iv"
+                    style="@style/image_view_style"
+                    android:src="@drawable/vermeer" />
+
+                <ImageView
+                    android:id="@+id/laar_iv"
+                    style="@style/laarImage_view_style"
+                    android:src="@drawable/laar" />
+
+                <ImageView
+                    android:id="@+id/bruegel_iv"
+                    style="@style/bruegel_imageView_style"
+                    android:src="@drawable/bruegel" />
+
+                <ImageView
+                    android:id="@+id/hitch_iv"
+                    style="@style/hitch_imageView_style"
+                    android:src="@drawable/hitch" />
+
+                <ImageView
+                    android:id="@+id/warhol_iv"
+                    style="@style/warhol_imageView_style"
+                    android:src="@drawable/warhol" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/quiz_title"
+                style="@style/textView_style"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="32dp"
+                android:layout_marginTop="46dp"
+                android:text="@string/quiz"
+                android:textAllCaps="true"
+                android:textColor="#FF6D00"
+                android:textSize="42sp" />
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/quiz_title"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="16dp"
+                android:padding="8dp"
+                android:text="@string/art_meets_art"
+                android:textSize="36sp" />
+
+            <EditText
+                android:id="@+id/enter_your_name_please"
+                style="@style/editText_style"
+                android:layout_below="@+id/title"
+                android:layout_marginTop="68dp"
+                android:hint="@string/enter_your_name" />
+
+            <Button
+                android:id="@+id/welcome_button"
+                style="@style/center_buttom_style"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="6dp"
+                android:padding="2dp"
+                android:text="@string/welcome" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="1dp" />
+
+        <ImageView
+            android:id="@+id/vermeer_quiz"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="6dp"
+            android:layout_weight="2"
+            android:contentDescription="@string/todo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/vermeer" />
+
+        <TextView
+            android:id="@+id/first_question"
+            style="@style/first_question_text"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="@string/_1_what_is_the_name_of_this_painting_that_has_inspired_other_art_forms" />
+
+        <EditText
+            android:id="@+id/first_answer"
+            style="@style/third_answer_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="26dp"
+            android:layout_weight="1"
+            android:hint="@string/enter_your_answer_please"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/second_question"
+            style="@style/first_question_text"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:text="@string/_2_what_are_the_other_art_forms_in_the_case_above" />
+
+        <CheckBox
+            android:id="@+id/ch_literature"
+            style="@style/checkBox_style"
+            android:onClick="onCheckboxClicked"
+            android:paddingLeft="16dp"
+            android:text="@string/literature" />
+
+        <CheckBox
+            android:id="@+id/ch_music"
+            style="@style/checkBox_style"
+            android:onClick="onCheckboxClicked"
+            android:paddingLeft="16dp"
+            android:text="@string/music" />
+
+        <CheckBox
+            android:id="@+id/ch_movie"
+            style="@style/checkBox_style"
+            android:layout_marginBottom="20dp"
+            android:onClick="onCheckboxClicked"
+            android:paddingLeft="16dp"
+            android:text="@string/movie" />
+
+        <ImageView
+            android:id="@+id/hitch_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="2"
+            android:contentDescription="@string/todo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hitch" />
+
+        <TextView
+            android:id="@+id/third_question"
+            style="@style/first_question_text"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="@string/_3_who_has_modeled_the_bates_house_in_his_film_after_e_hopper_s_house" />
+
+        <EditText
+            android:id="@+id/third_answer"
+            style="@style/third_answer_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="26dp"
+            android:layout_weight="1"
+            android:hint="@string/enter_your_answer_please"
+            android:padding="8dp" />
+
+        <ImageView
+            android:id="@+id/laar_quiz"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="2"
+            android:contentDescription="@string/todo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/laar" />
+
+        <TextView
+            android:id="@+id/fourth_question"
+            style="@style/first_question_text"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="@string/_4_this_image_from_l_von_trier_s_melancholia_was_inspired_by_millias_s_ophelia" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <RadioButton
+                android:id="@+id/yes_radio_button"
+                style="@style/checkBox_style"
+                android:onClick="onRadioButtonClicked"
+                android:padding="4dp"
+                android:text="@string/yes" />
+
+            <RadioButton
+                android:id="@+id/no_radio_button"
+                style="@style/checkBox_style"
+                android:onClick="onRadioButtonClicked"
+                android:padding="4dp"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/bruegel_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginVertical="8dp"
+            android:layout_weight="2"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bruegel" />
+
+        <TextView
+            android:id="@+id/fifth_question"
+            style="@style/first_question_text"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="@string/_5_pieter_bruegel_the_elder_s_hunter_in_the_snow_inspired" />
+
+        <CheckBox
+            android:id="@+id/ch_auden"
+            style="@style/checkBox_style"
+            android:onClick="onCheckboxClicked"
+            android:paddingLeft="16dp"
+            android:text="@string/w_h_auden_musee_de_beaux_arts" />
+
+        <CheckBox
+            android:id="@+id/ch_williams"
+            style="@style/checkBox_style"
+            android:onClick="onCheckboxClicked"
+            android:paddingLeft="16dp"
+            android:text="@string/w_carlos_williams_hunters_in_the_snow" />
+
+        <CheckBox
+            android:id="@+id/ch_szirtes"
+            style="@style/checkBox_style"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif"
+            android:onClick="onCheckboxClicked"
+            android:paddingLeft="16dp"
+            android:text="@string/g_szirtes_actaeon" />
+
+        <ImageView
+            android:id="@+id/warhol_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginVertical="8dp"
+            android:layout_weight="2"
+            android:scaleType="centerCrop"
+            android:src="@drawable/warhol" />
+
+        <TextView
+            android:id="@+id/sixth_question"
+            style="@style/first_question_text"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="@string/_6_da_vinci_s_the_last_supper_as_source_of_inspiration_for_another_artist_like" />
+
+        <EditText
+            android:id="@+id/sixth_answer"
+            style="@style/third_answer_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginBottom="26dp"
+            android:layout_weight="1"
+            android:hint="@string/enter_your_answer_please"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/submit"
+            style="@style/submit_button"
+            android:onClick="display"
+            android:text="@string/result" />
+
+        <TextView
+            android:id="@+id/score"
+            style="@style/checkBox_style"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="22dp"
+            android:layout_marginVertical="16dp"
+            android:fontFamily="sans-serif"
+            android:padding="6dp"
+            android:text="@string/_0"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/reset"
+            style="@style/submit_button"
+            android:onClick="resetApp"
+            android:text="@string/reset" />
+    </LinearLayout>
+
+</ScrollView>
+

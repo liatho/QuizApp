@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="quiz">Quiz</string>
+    <string name="art_meets_art">Art meets art</string>
+    <string name="enter_your_name">Enter your name!</string>
+    <string name="welcome">Welcome!</string>
+    <string name="reset">Reset</string>
+    <string name="_0">0</string>
+    <string name="result">Result</string>
+    <string name="enter_your_answer_please">Enter your answer, please!</string>
+    <string name="_6_da_vinci_s_the_last_supper_as_source_of_inspiration_for_another_artist_like">6. Da Vinci\'s The Last Supper as source of inspiration for another artist like:</string>
+    <string name="g_szirtes_actaeon">G. Szirtes: Actaeon</string>
+    <string name="w_carlos_williams_hunters_in_the_snow">W. Carlos Williams: Hunters in the Snow</string>
+    <string name="w_h_auden_musee_de_beaux_arts">W. H. Auden: Musee de Beaux Arts</string>
+    <string name="_5_pieter_bruegel_the_elder_s_hunter_in_the_snow_inspired">5. Pieter Bruegel the Elder\'s Hunter in the Snow inspired:</string>
+    <string name="no">no</string>
+    <string name="yes">yes</string>
+    <string name="_4_this_image_from_l_von_trier_s_melancholia_was_inspired_by_millias_s_ophelia">4. This image from L. von Trier\'s Melancholia was inspired by Millias\'s Ophelia.</string>
+
+    <string name="_3_who_has_modeled_the_bates_house_in_his_film_after_e_hopper_s_house">3. Who has modeled the Bates house in his film after E. Hopper\'s House?</string>
+    <string name="movie">Movie</string>
+    <string name="music">Music</string>
+    <string name="literature">Literature</string>
+    <string name="_2_what_are_the_other_art_forms_in_the_case_above">2. What are the other art forms in the case above?</string>
+
+    <string name="_1_what_is_the_name_of_this_painting_that_has_inspired_other_art_forms">1. What is the name of this painting that has inspired other art forms?</string>
+    <string name="todo">TODO</string>
+
+</resources>
